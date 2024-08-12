@@ -1,20 +1,19 @@
-"# ATM DEPI Java Task"
-Design the previous classes and note that
-a)"execute" method of each class will return the new account balance.
-b)"execute" method in balance inquiry will return the account balance in the specified currencyType, currencyType could be "U" for USD or "E" for euro
-c)"cancelTransaction" of each class will be opposite to the execute method, i.e. "execute" method in case of "Deposit" class will increase the balance of the account by the specified amount while "cancelTrasnaction" will decrease the balance by the specified amount.
+Java ATM System Design and Implementation
+Project Overview:
+Designed and implemented a comprehensive ATM system in Java, focusing on account management, financial transactions, and currency conversions. The system was built with a modular approach, encapsulating core functionalities like deposits, withdrawals, balance inquiries, and transaction reversals.
 
-2)Create main function and test your classes using the following
-Display the following menu to the user:
--Press 1 to enter account details
--Press 2 to deposit
--Press 3 to withdraw
--Press 4 to show current balance
--Press 5 to cancel last transaction
--Press 6 to exit
+Key Responsibilities:
 
-- If '1' is entered, you will ask the user to enter all account details (balance, owner name …etc) then save these values in an Account object
-- If '2' is entered, ask the user to enter the required amount then increase the account balance by the specified amount using an object of "Deposit"  class then print the new balance.
-- If '3' is entered, ask the user to enter the required amount then decrease the account balance by the specified amount using an object of "Withdraw" class then print the new balance
-- If '4' is entered, ask the user to enter the required currency type 'U for USD, E for euro' then print the current balance according to the specified currencyType
-- If '5' is entered cancel the last transaction and display the new balance.
+Class Design and Implementation: Developed classes for handling various ATM operations, such as Account, Deposit, Withdraw, and BalanceInquiry. Each class included an execute method to perform the respective operation and a cancelTransaction method to reverse the operation.
+
+Currency Handling: Implemented currency conversion within the BalanceInquiry class, allowing users to view their balance in different currencies (USD and Euro).
+
+User Interaction and Testing: Created a user-friendly menu-driven interface for testing the classes, enabling users to:
+
+Enter and manage account details.
+Perform deposits and withdrawals.
+Inquire about the current balance in different currencies.
+Cancel the last transaction to revert any changes.
+Code Quality: Ensured the implementation was modular, maintainable, and adhered to object-oriented principles.
+
+Technologies Used: Java, OOP principles
